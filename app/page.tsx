@@ -28,8 +28,8 @@ function Nav() {
             claude-md-coach
           </span>
         </Link>
-        <div className="flex items-center gap-6 text-sm text-[#14110f]">
-          <Link href="#how" className="opacity-80 hover:opacity-100">
+        <div className="flex items-center gap-4 text-sm text-[#14110f] md:gap-6">
+          <Link href="#how" className="whitespace-nowrap opacity-80 hover:opacity-100">
             How it works
           </Link>
           <Link href="#faq" className="opacity-80 hover:opacity-100">
@@ -37,7 +37,7 @@ function Nav() {
           </Link>
           <Link
             href="https://github.com/thevoiduniverse/claude-md-coach"
-            className="rounded-full bg-[#14110f] px-4 py-2 text-[#f4efe7] hover:bg-black"
+            className="hidden rounded-full bg-[#14110f] px-4 py-2 text-[#f4efe7] hover:bg-black md:inline-flex"
           >
             View on GitHub
           </Link>
