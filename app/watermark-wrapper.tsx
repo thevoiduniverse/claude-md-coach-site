@@ -18,7 +18,7 @@ export function CoachTapHotspot({ children }: { children: ReactNode }) {
       aria-label="Tap to make the coach jump"
       role="button"
     >
-      <div className="pointer-events-none size-full">{children}</div>
+      {children}
     </div>
   );
 }
