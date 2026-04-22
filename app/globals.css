@@ -3,8 +3,8 @@
 :root {
   --background: #050505;
   --foreground: #f4f4f5;
-  --accent: #34d399;
-  --accent-dim: #10b981;
+  --accent: #e8632d;
+  --accent-dim: #c94418;
   --border: #1f1f22;
   --card: #0b0b0d;
   --muted: #71717a;
@@ -59,7 +59,7 @@ body {
   inset: 0;
   background-image: radial-gradient(
     circle at 50% 0%,
-    rgba(52, 211, 153, 0.08),
+    rgba(232, 99, 45, 0.08),
     transparent 60%
   );
   pointer-events: none;
@@ -67,6 +67,59 @@ body {
 
 .glow-accent {
   box-shadow:
-    0 0 0 1px rgba(52, 211, 153, 0.25),
-    0 0 24px rgba(52, 211, 153, 0.12);
+    0 0 0 1px rgba(232, 99, 45, 0.3),
+    0 0 32px rgba(232, 99, 45, 0.18);
+}
+
+.terminal-surface {
+  background: #0b0b0d;
+  color: #f4f4f5;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.terminal-surface .terminal-bar {
+  background: rgba(255, 255, 255, 0.03);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+@keyframes coach-drop {
+  0% {
+    transform: translateY(-110vh);
+  }
+  60% {
+    transform: translateY(22px);
+  }
+  78% {
+    transform: translateY(-14px);
+  }
+  90% {
+    transform: translateY(6px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes coach-jump {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  38% {
+    transform: translateY(-60px);
+  }
+  65% {
+    transform: translateY(12px);
+  }
+  82% {
+    transform: translateY(-6px);
+  }
+}
+
+.coach-drop {
+  animation: coach-drop 0.95s cubic-bezier(0.2, 1.2, 0.3, 1) both;
+}
+
+.coach-jump {
+  animation: coach-jump 0.5s cubic-bezier(0.3, 1.45, 0.4, 1) both;
 }
