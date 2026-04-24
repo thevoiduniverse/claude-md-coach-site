@@ -779,9 +779,15 @@ function FinalCTA() {
           without you lifting a finger.
         </p>
         <div className="mt-10 flex flex-col items-center gap-3">
-          <div className="mono flex items-center gap-3 rounded-lg border border-border bg-card px-4 py-3 text-sm glow-accent">
-            <span className="text-accent">$</span>
-            <span>/plugin install claude-md-coach@claude-md-coach</span>
+          <div className="mono flex flex-col gap-2 rounded-lg border border-border bg-card px-4 py-3 text-left text-sm glow-accent">
+            <div className="flex items-center gap-3">
+              <span className="text-accent">$</span>
+              <span>/plugin marketplace add thevoiduniverse/claude-md-coach</span>
+            </div>
+            <div className="flex items-center gap-3">
+              <span className="text-accent">$</span>
+              <span>/plugin install claude-md-coach@claude-md-coach</span>
+            </div>
           </div>
           <Link
             href="https://github.com/thevoiduniverse/claude-md-coach"
